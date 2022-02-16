@@ -137,7 +137,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_METADATA_PARTITION := true
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+TARGET_POWER_FEATURE_EXT_LIB := //$(DEVICE_PATH):libpowerfeature_ext_sweet
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
