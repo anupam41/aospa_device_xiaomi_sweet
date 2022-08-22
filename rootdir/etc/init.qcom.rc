@@ -191,6 +191,10 @@ on post-fs-data
     mkdir /dev/socket/location/xtra 0770 gps gps
     mkdir /dev/socket/location/dgnss 0770 gps gps
 
+    # Create PERFD deamon related dirs
+    mkdir /data/vendor/perfd 2770 root system
+    rm /data/vendor/perfd/default_values
+
     # Create directories for wifihal services
     mkdir /dev/socket/wifihal 2770 wifi wifi
 
