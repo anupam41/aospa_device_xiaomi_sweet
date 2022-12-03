@@ -224,7 +224,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor
 
-MEDIA_HAL_PATH := hardware/qcom-caf/sm8150/media
+MEDIA_HAL_PATH := hardware/qcom/media
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
