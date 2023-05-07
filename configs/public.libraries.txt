@@ -1,5 +1,6 @@
 libadsprpc.so
 libcdsprpc.so
+libqti-perfd-client.so
 libsdsprpc.so
 libfastcvopt.so
 liblistensoundmodel2.so
