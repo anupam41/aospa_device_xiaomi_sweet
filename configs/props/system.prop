@@ -20,6 +20,9 @@ mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 
 # Radio
+persist.radio.NO_STAPA=1
+persist.radio.VT_CAM_INTERFACE=1
+persist.radio.VT_HYBRID_ENABLE=1
 ril.subscription.types=RUIM
 
 # Recovery
