@@ -91,10 +91,6 @@ on boot
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
 
-    # Set xiaomi touch permissions
-    chown system system /dev/xiaomi-touch
-    chmod 0660 /dev/xiaomi-touch
-
     # Set fingerprint related permissions
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq_enable
