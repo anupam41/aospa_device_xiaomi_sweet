@@ -8,6 +8,7 @@ libhta_hexagon_runtime.so
 liblistensoundmodel2.so
 libnpu.so
 libOpenCL.so
+libqti-perfd-client.so
 libsdsprpc.so
 libSuperSensor.so
 libSuperSensorCPU.so
