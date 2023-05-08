@@ -338,6 +338,7 @@ PRODUCT_COPY_FILES += \
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    av \
     bt \
     perf \
     telephony \
@@ -420,7 +421,6 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libavservices_minijail_32 \
     libdisplayconfig.qti \
     libnl \
     libqdMetaData \
