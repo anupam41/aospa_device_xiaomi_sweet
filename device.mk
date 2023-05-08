@@ -310,6 +310,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Paranoid Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist.xml
