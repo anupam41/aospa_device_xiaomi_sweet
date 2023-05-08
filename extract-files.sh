@@ -66,6 +66,9 @@ function blob_fixup() {
         vendor/lib64/hw/hwcomposer.sm6150.so)
             "${PATCHELF}" --add-needed "libsdmcore-shim.so" "${2}"
             ;;
+        system_ext/lib64/libwfdnative.so)
+            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
     esac
 }
 
