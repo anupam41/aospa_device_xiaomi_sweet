@@ -1,6 +1,15 @@
 # Audio
 /dev/socket/audio_hw_socket                                          u:object_r:audio_socket:s0
 
+# Block devices
+/dev/block/mmcblk0p1                                                 u:object_r:sdcard_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/cust                  u:object_r:system_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/system                u:object_r:system_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/vendor                u:object_r:system_block_device:s0
+/dev/block/platform/soc/7c4000\.sdhci/by-name/cust                   u:object_r:system_block_device:s0
+/dev/block/platform/soc/7c4000\.sdhci/by-name/system                 u:object_r:system_block_device:s0
+/dev/block/platform/soc/7c4000\.sdhci/by-name/vendor                 u:object_r:system_block_device:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                     u:object_r:vendor_persist_camera_file:s0
 
@@ -11,10 +20,8 @@
 /dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
 /sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/anti_flicker          u:object_r:sysfs_anti_flicker:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui                u:object_r:vendor_sysfs_fod:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display/doze_status           u:object_r:sysfs_doze:s0
 
 # Fingerprint
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
@@ -29,13 +36,11 @@
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr         u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_sm6150    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
+# IR
+/dev/spidev[0-9]\.1                                                  u:object_r:lirc_device:s0
+
 # Haptic
 /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel             u:object_r:sysfs_vibrator:s0
-
-# Hexagon DSP-side executable needed for Halide operation
-# This is labeled as public_adsprpcd_file as it needs to be read by apps
-# (e.g. Google Camera App)
-/mnt/vendor/dsp/fastrpc_shell_3                                      u:object_r:public_adsprpcd_file:s0
 
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
@@ -45,4 +50,19 @@
 
 # Xiaomi thermal daemon
 /vendor/bin/mi_thermald                                              u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?                                           u:object_r:thermal_data_file:s0
+/data/vendor/thermal(/.*)?       u:object_r:thermal_data_file:s0
+
+# IR
+/dev/ir_spi                                                          u:object_r:vendor_ir_device:s0
+
+# Proximity
+/dev/elliptic0                                                       u:object_r:vendor_elliptic_device:s0
+/sys/bus/iio/devices                                                 u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm6150l@4:vadc@3100/iio:device1(/.*)? u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/us_prox.0/iio:device2(/.*)?                    u:object_r:vendor_sysfs_iio:s0
+
+# Battery secret
+/vendor/bin/batterysecret                                         u:object_r:batterysecret_exec:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
