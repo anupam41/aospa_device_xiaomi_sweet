@@ -12,6 +12,17 @@ persist.camera.                    u:object_r:vendor_camera_prop:s0
 ro.camera.req.fmq.size             u:object_r:vendor_camera_prop:s0
 ro.camera.res.fmq.size             u:object_r:vendor_camera_prop:s0
 
+# Displayfeature
+ro.vendor.histogram.enable                            u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.bcbc.enable                                 u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.bl.poll                                     u:object_r:vendor_displayfeature_prop:s0
+init.svc.vendor.displayfeature-hal-1-0                u:object_r:vendor_displayfeature_prop:s0
+
+# Elliptic ultrasound proximity
+elliptic.ultrasound.multiple_mics. u:object_r:elliptic_ultrasound_prop:s0
+elliptic.ultrasound.               u:object_r:vendor_sensors_prop:s0
+invn.hal                           u:object_r:vendor_sensors_prop:s0
+
 # Fingerprint
 gf.debug.                          u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.             u:object_r:vendor_fp_prop:s0
