@@ -285,17 +285,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS += *
-
-# Overlay-RRO
 PRODUCT_PACKAGES += \
+    AOSPASweetFrameworks \
+    AOSPASweetSettings \
     SettingsOverlayRR \
+    SweetCarrierConfig \
+    SweetFrameworks \
     SweetinproSettingsProvider \
     SweetinproWifiOverlay \
-    SweetWifiOverlay
+    SweetSettingsProvider \
+    SweetSystemUI \
+    SweetWifiOverlay \
+    WifiOverlay
+
+PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -322,14 +325,11 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     display \
+    overlay \
     perf \
     telephony \
     usb \
     wfd
-
-# RIL
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
 
 # Recovery
 PRODUCT_PACKAGES += \
