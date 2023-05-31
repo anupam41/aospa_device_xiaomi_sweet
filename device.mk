@@ -138,10 +138,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
-
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
@@ -171,11 +167,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
@@ -201,10 +192,6 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -316,9 +303,12 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     av \
     bt \
+    charging \
     display \
+    keymaster \
     overlay \
     perf \
+    qseecomd \
     telephony \
     usb \
     vibrator \
