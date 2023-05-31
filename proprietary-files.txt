@@ -602,10 +602,8 @@ vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 -vendor/lib/libsmwrapper.so
 
 # Media
--vendor/bin/hw/vendor.qti.media.c2@1.0-service
 -vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
@@ -620,14 +618,11 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libOmxDsdDec.so
 -vendor/lib/libOmxEvrcDec.so
 -vendor/lib/libOmxQcelp13Dec.so
--vendor/lib/libOmxSwVdec.so
--vendor/lib/libOmxSwVencMpeg4.so
 -vendor/lib/libOmxVpp.so
 -vendor/lib/libOmxWmaDec.so
 -vendor/lib/libdsd2pcm.so
 -vendor/lib/libmmosal.so;MODULE=libmmosal_vendor
 -vendor/lib/libqcodec2.so
--vendor/lib/libswvdec.so
 -vendor/lib/libvppclient.so
 -vendor/lib/libvpphvx.so
 -vendor/lib/libvpplibrary.so
