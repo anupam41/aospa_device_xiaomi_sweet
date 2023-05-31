@@ -76,8 +76,6 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|e48a5798ea09afc1ad47c02939846
 vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6fe
 
 # Audio FX modules
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libmisoundfx.so
 -vendor/lib/soundfx/libshoebox.so
