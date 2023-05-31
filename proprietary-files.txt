@@ -356,9 +356,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|727410454921cbf6d56837ebf5c930fb948d7f15
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|34718fcf0dd5d3d30e383e02824145204772676d
 
-# Charger
--vendor/bin/hvdcp_opti
-
 # Certificate Authority
 vendor/app/CACertService/CACertService.apk
 -vendor/lib64/libcacertclient.so
@@ -441,23 +438,12 @@ vendor/etc/init/dpmQmiMgr.rc
 -vendor/lib64/libdpmqmihal.so
 
 # DRM
--vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
-vendor/etc/init/qseecomd.rc
--vendor/lib64/libGPreqcancel.so
--vendor/lib64/libGPreqcancel_svc.so
--vendor/lib64/libQSEEComAPI.so
--vendor/lib64/libcpion.so
--vendor/lib64/libdrmfs.so
--vendor/lib64/libdrmtime.so
 -vendor/lib64/libhdcpsrm.so
 -vendor/lib64/libminkdescriptor.so
 -vendor/lib64/libminksocket.so
 -vendor/lib64/liboemcrypto.so
 -vendor/lib64/libops.so
--vendor/lib64/libqisl.so
--vendor/lib64/librpmb.so
--vendor/lib64/libssd.so
 -vendor/lib64/libtrustedapploader.so
 
 # DRM widevine
@@ -584,14 +570,6 @@ vendor/etc/init/ipa_fws.rc
 
 # IR
 -vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
-
-# Keymaster
--vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
--vendor/lib64/libkeymasterdeviceutils.so
--vendor/lib64/libkeymasterutils.so
--vendor/lib64/libqcbor.so
--vendor/lib64/libqtikeymaster4.so
 
 # Listen
 -vendor/lib/libadpcmdec.so
