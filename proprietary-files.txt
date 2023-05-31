@@ -1,20 +1,5 @@
 # These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.2.0.TKFMIXM, unless pinned
 
-# ADSP
--vendor/bin/adsprpcd
--vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
--vendor/lib/libadsp_default_listener.so
--vendor/lib/libadsprpc.so
--vendor/lib/libcdsp_default_listener.so
--vendor/lib64/libadsp_default_listener.so
--vendor/lib64/libadsprpc.so
--vendor/lib64/libcdsp_default_listener.so
--vendor/lib64/libcdsprpc.so
--vendor/lib64/libmdsprpc.so
--vendor/lib64/libsdsprpc.so
-
 # ADSP modules
 -vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
 -vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
@@ -181,9 +166,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libsnpe_dsp_domains_system.so
 -vendor/lib64/libsnpe_dsp_domains_v2.so
 -vendor/lib64/libsnpe_dsp_domains_v2_system.so
--vendor/lib64/libsns_device_mode_stub.so
 -vendor/lib64/libsns_fastRPC_util.so
--vendor/lib64/libsns_low_lat_stream_stub.so
 -vendor/lib64/libsnsapi.so
 -vendor/lib64/libsnsdiaglog.so
 -vendor/lib64/libswregistrationalgo.so
@@ -355,9 +338,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|2fecdcf39059179fff3da1617e4eabdc45414fa1
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|fe2e514d7a36fb12518d49856521d0a4e0edca0f
 
-# Charger
--vendor/bin/hvdcp_opti
-
 # Certificate Authority
 vendor/app/CACertService/CACertService.apk
 -vendor/lib64/libcacertclient.so
@@ -447,22 +427,11 @@ vendor/etc/init/dpmQmiMgr.rc
 -vendor/lib64/libdpmqmihal.so
 
 # DRM
--vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
-vendor/etc/init/qseecomd.rc
--vendor/lib64/libGPreqcancel.so
--vendor/lib64/libGPreqcancel_svc.so
--vendor/lib64/libQSEEComAPI.so
--vendor/lib64/libcpion.so
--vendor/lib64/libdrmfs.so
--vendor/lib64/libdrmtime.so
 -vendor/lib64/libhdcpsrm.so
 -vendor/lib64/libminkdescriptor.so
 -vendor/lib64/libminksocket.so
 -vendor/lib64/libops.so
--vendor/lib64/libqisl.so
--vendor/lib64/librpmb.so
--vendor/lib64/libssd.so
 -vendor/lib64/libtrustedapploader.so
 
 # DRM widevine
@@ -471,12 +440,6 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/lib64/libwvhidl.so
 -vendor/lib64/mediadrm/libwvdrmengine.so
-
-# DSP
--vendor/bin/dspservice
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
--vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint
 -vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
@@ -489,11 +452,6 @@ vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
 vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_sqe.fw
-
-# Gatekeeper
--vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
--vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS
 -vendor/bin/loc_launcher
@@ -589,14 +547,6 @@ vendor/firmware/ipa_fws.mdt
 
 # IR
 -vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
-
-# Keymaster
--vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
--vendor/lib64/libkeymasterdeviceutils.so
--vendor/lib64/libkeymasterutils.so
--vendor/lib64/libqcbor.so
--vendor/lib64/libqtikeymaster4.so
 
 # Listen
 -vendor/lib/libadpcmdec.so
@@ -758,18 +708,9 @@ vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 # Sensors
--vendor/bin/sensors.qti
-vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/vendor.sensors.qti.rc
--vendor/lib64/libsensorcal.so
 -vendor/lib64/libsensorndkbridge.so
 -vendor/lib64/libsensorslog.so
--vendor/lib64/libsns_fastRPC_util.so
--vendor/lib64/libsns_low_lat_stream_stub.so
 -vendor/lib64/libsnsapi.so
--vendor/lib64/libsnsdiaglog.so
--vendor/lib64/libssc.so
--vendor/lib64/libssc_default_listener.so
 -vendor/lib64/libssccalapi.so
 -vendor/lib64/sensors.ssc.so
 -vendor/lib64/sensors.touch.so
