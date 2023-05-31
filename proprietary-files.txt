@@ -355,9 +355,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|2fecdcf39059179fff3da1617e4eabdc45414fa1
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|fe2e514d7a36fb12518d49856521d0a4e0edca0f
 
-# Charger
--vendor/bin/hvdcp_opti
-
 # Certificate Authority
 vendor/app/CACertService/CACertService.apk
 -vendor/lib64/libcacertclient.so
@@ -447,22 +444,11 @@ vendor/etc/init/dpmQmiMgr.rc
 -vendor/lib64/libdpmqmihal.so
 
 # DRM
--vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
-vendor/etc/init/qseecomd.rc
--vendor/lib64/libGPreqcancel.so
--vendor/lib64/libGPreqcancel_svc.so
--vendor/lib64/libQSEEComAPI.so
--vendor/lib64/libcpion.so
--vendor/lib64/libdrmfs.so
--vendor/lib64/libdrmtime.so
 -vendor/lib64/libhdcpsrm.so
 -vendor/lib64/libminkdescriptor.so
 -vendor/lib64/libminksocket.so
 -vendor/lib64/libops.so
--vendor/lib64/libqisl.so
--vendor/lib64/librpmb.so
--vendor/lib64/libssd.so
 -vendor/lib64/libtrustedapploader.so
 
 # DRM widevine
@@ -489,11 +475,6 @@ vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
 vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_sqe.fw
-
-# Gatekeeper
--vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
--vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS
 -vendor/bin/loc_launcher
@@ -589,14 +570,6 @@ vendor/firmware/ipa_fws.mdt
 
 # IR
 -vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
-
-# Keymaster
--vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
--vendor/lib64/libkeymasterdeviceutils.so
--vendor/lib64/libkeymasterutils.so
--vendor/lib64/libqcbor.so
--vendor/lib64/libqtikeymaster4.so
 
 # Listen
 -vendor/lib/libadpcmdec.so
