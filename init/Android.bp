@@ -23,3 +23,23 @@ cc_library_static {
     ],
     shared_libs: ["libbase"],
 }
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,    
+}
+
+prebuilt_etc {
+    name: "init.sweet.rc",
+    src: "init.sweet.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.early_init.sh",
+    src: "init.qti.early_init.sh",
+    vendor: true,
+}
