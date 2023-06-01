@@ -858,5 +858,8 @@ vendor/etc/wfdconfig.xml
 -vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE=vendor.qti.hardware.wifidisplaysession@1.0_vendor
 -vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 
+# WLAN - from LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/bin/cnss-daemon|466fbe54a79f244475adb13ddd0e55f17fee3d66
+
 # Xiaomi MAC
 -vendor/bin/nv_mac
