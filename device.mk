@@ -113,7 +113,6 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libgui_vendor \
     libsdmcore-shim
 
 PRODUCT_COPY_FILES += \
@@ -273,7 +272,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     charging \
     display \
     keymaster \
-    media-legacy \
+    media \
     overlay \
     perf \
     qseecomd \
