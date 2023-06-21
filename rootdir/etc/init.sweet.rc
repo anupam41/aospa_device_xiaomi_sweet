@@ -1,3 +1,7 @@
+on post-fs
+# Apply sensors fix
+  start init-sensors_fix-sh
+
 on property:ro.boot.product.hardware.sku=sweet
     enable vendor.nfc_hal_service
 
@@ -8,3 +12,9 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     writepid /dev/cpuset/system-background/tasks
     disabled
+
+service init-sensors_fix-sh /vendor/bin/init.sensors_fix.sh
+    class main
+    user system
+    group system
+    oneshot
