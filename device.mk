@@ -180,7 +180,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.sweet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sweet.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/bin/init.sweet.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.sweet.post_boot.sh
+    $(LOCAL_PATH)/rootdir/bin/init.sweet.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.sweet.post_boot.sh \
+    $(LOCAL_PATH)/rootdir/bin/init.sensors_fix.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.sensors_fix.sh
    
 
 # IRSC
