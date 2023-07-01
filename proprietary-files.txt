@@ -57,6 +57,15 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 -vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio ACDB
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 -vendor/lib/libacdb-fts.so
 -vendor/lib/libacdbloader.so
 -vendor/lib/libacdbrtac.so
@@ -64,16 +73,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 -vendor/lib/libaudcal.so
 
 # Audio ACDB - V12.5.2.0.RKFINXM-release-keys
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|1607f4018f676dae74fc24efa5fbd1ccb9093812
-vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb|91735baca19020f2136e5d4f8616db458da88ce9
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb|e1d91d42aaa60f16896b672d24c5a0bf214cdb4c
 vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|b34ec442b87c1acb88dafd55fd86e77acbb003a3
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb|8a3778a244c3f4c73f6b3f6fc638815898e630c3
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|288299cf2dbdc2b4891a08eb1c74f5e5b2d37bd5
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|3affad5382970a6d932268322965bfae4a7b7a41
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|e98d5e4bbd2afe7fb18a206dd4f157a1a2fa2a8d
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|e48a5798ea09afc1ad47c02939846a6a51221811
-vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6fe
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
@@ -84,11 +84,11 @@ system_ext/framework/audiosphere.jar
 
 # Audio HAL
 -vendor/lib/hw/audio.primary.sm6150.so
--vendor/lib/vndk/libxlog.so
 -vendor/lib/libaudio_log_utils.so
 -vendor/lib/libaudioparsers.so
 -vendor/lib/libaudioroute_ext.so
 -vendor/lib/libqtigef.so
+-vendor/lib/vndk/libxlog.so
 
 # Audio extensions
 -vendor/lib/btaudio_offload_if.so
@@ -211,11 +211,6 @@ vendor/lib64/mibokeh_712_opencl.bin
 -vendor/lib64/libarcsoft_super_night_raw.so|a725136e8fe0c9ffd6b5ed527fd480478c9fd57d
 
 # Camera-components
-vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
-vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.altek.node.depurple.so
 -vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
 -vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
@@ -270,6 +265,11 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
 -vendor/lib64/camera/components/com.xiaomi.node.mimovie.so
 -vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+vendor/lib64/camera/components/etc/morpho_lowlight4.0.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_3hdr.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high.xml
+vendor/lib64/camera/components/etc/morpho_lowlight4.0_adrc_high_1.xml
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/libdepthmapwrapper.so
 -vendor/lib64/camera/components/libmmcamera_cac3.so
 
@@ -351,9 +351,9 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
-# Camera-sensors - V13.0.9.0.SKFINXM-release-keys
-vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|2fecdcf39059179fff3da1617e4eabdc45414fa1
-vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|fe2e514d7a36fb12518d49856521d0a4e0edca0f
+# Camera-sensors - V14.0.1.0.TKFINXM-release-keys
+vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|727410454921cbf6d56837ebf5c930fb948d7f15
+vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|34718fcf0dd5d3d30e383e02824145204772676d
 
 # Charger
 -vendor/bin/hvdcp_opti
@@ -446,7 +446,6 @@ vendor/lib64/libsdedrm.so
 vendor/lib64/libsdmcore.so
 
 # Display Feature
-# Display Feature
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE=vendor.xiaomi.hardware.displayfeature@1.0_vendor
 
@@ -483,6 +482,7 @@ vendor/etc/init/qseecomd.rc
 -vendor/lib64/libhdcpsrm.so
 -vendor/lib64/libminkdescriptor.so
 -vendor/lib64/libminksocket.so
+-vendor/lib64/liboemcrypto.so
 -vendor/lib64/libops.so
 -vendor/lib64/libqisl.so
 -vendor/lib64/librpmb.so

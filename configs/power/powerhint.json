@@ -49,7 +49,7 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
       "Values": [
         "0",
-        "3"
+        "2"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -60,7 +60,7 @@
       "Values": [
         "0",
         "3",
-        "7"
+        "6"
       ],
       "ResetOnInit": true
     },
@@ -273,10 +273,19 @@
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
-        "44",
-        "100"
+        "43",
+        "64"
       ],
       "HoldFd": true
+    },
+    {
+      "Name": "ForegroundCpuset",
+      "Path": "/dev/cpuset/foreground/cpus",
+      "Values": [
+        "0-5",
+        "0-5,7"
+      ],
+      "ResetOnInit": true
     },
     {
       "Name": "EnergyAware",
@@ -338,7 +347,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "3"
+      "Value": "2"
     },
     {
       "PowerHint": "INTERACTION",
@@ -387,6 +396,12 @@
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
       "Value": "2597"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "ForegroundCpuset",
+      "Duration": 5000,
+      "Value": "0-5"
     },
     {
       "PowerHint": "LAUNCH",
@@ -473,12 +488,6 @@
       "Value": "1459200000"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "TASchedtuneHighCap",
-      "Duration": 3000,
-      "Value": "1"
-    },
-    {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CDCpuset",
       "Duration": 5000,
@@ -524,7 +533,7 @@
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 1000,
-      "Value": "44"
+      "Value": "43"
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
@@ -722,13 +731,13 @@
       "PowerHint": "CAMERA_SHOT",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 1000,
-      "Value": "44"
+      "Value": "43"
     },
     {
       "PowerHint": "AUDIO_LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
-      "Value": "44"
+      "Value": "43"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
@@ -740,7 +749,7 @@
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 0,
-      "Value": "44"
+      "Value": "43"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -764,7 +773,7 @@
       "PowerHint": "TPU_BOOST",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
-      "Value": "44"
+      "Value": "43"
     },
     {
       "PowerHint": "Flipendo",
