@@ -77,6 +77,13 @@ vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+persist.vendor.audio.hifi=false
+persist.vendor.audio.ring.filter.mask=0
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.us.type=mius
+persist.vendor.audio.voicecall.speaker.stereo=true
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -175,11 +182,19 @@ vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.enable_force_split=1
 vendor.display.qdcm.mode_combine=1
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+vendor.display.override_doze_mode=1
 
 # Display - Set color mode to Adaptive by default
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
+
+# Fluence
+ro.vendor.audio.sdk.fluencetype=fluence
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
