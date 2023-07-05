@@ -15,11 +15,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.motor</name>
-        <version>1.0</version>
+    <hal format="aidl" optional="true">
+        <name>vendor.aospa.power</name>
+        <version>1</version>
         <interface>
-            <name>IMotor</name>
+            <name>IPowerFeature</name>
             <instance>default</instance>
         </interface>
     </hal>
