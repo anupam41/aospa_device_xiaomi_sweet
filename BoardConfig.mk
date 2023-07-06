@@ -20,6 +20,9 @@ BOARD_VENDOR := xiaomi
 -include vendor/xiaomi/sweet-miuicamera/products/board.mk
 
 DEVICE_PATH := device/xiaomi/sweet
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Inherit from proprietary files
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
