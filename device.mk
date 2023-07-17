@@ -151,6 +151,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
     $(LOCAL_PATH)/rootdir/etc/ueventd.sweet.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.sweet.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sweet.perf.rc \
     $(LOCAL_PATH)/rootdir/etc/init.sweet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sweet.rc
 
 PRODUCT_COPY_FILES += \
