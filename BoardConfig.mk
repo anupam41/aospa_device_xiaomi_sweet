@@ -24,6 +24,9 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # Inherit from proprietary files for miuicamera
 -include vendor/xiaomi/sweet-miuicamera/products/board.mk
 
+# Inherit from proprietary files for MiSound
+-include vendor/xiaomi/sweet-misound/BoardConfigMiSound.mk
+
 # Inherit from proprietary files
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
 
