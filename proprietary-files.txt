@@ -837,20 +837,20 @@ vendor/lib64/vendor.display.color@1.4.so|45ecd22ef8753543a92a853aaddc9bd43fa95c1
 vendor/lib64/vendor.display.color@1.5.so|4e6d3f0f86b991a19824228fe18c956b45392142
 vendor/lib64/vendor.display.postproc@1.0.so|86ef4e868f7abb95d555a4d086a8c4193920803f
 
-# Graphics (SDM)
-vendor/lib/libhdr_tm.so
-vendor/lib/libqseed3.so
-vendor/lib/libtinyxml2_1.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Graphics (SDM) - from LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/lib/libhdr_tm.so|3c94e41359e6bbd68d97961377d28fb58b76949e
+vendor/lib/libqseed3.so|97d17f5694a845dcdf7e09cb99aa4a01ffc26ecd
+vendor/lib/libtinyxml2_1.so|597d471aad4cd5c0cf73bab8bc04bac5ed95ee92
+vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
+vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
+vendor/lib64/libsdedrm.so|2a9a6f8b79ee8c916a656a670b3670105e143418
+vendor/lib64/libsdm-color.so|d0984c33dcbf84940676917e0c3584b0ccfeaf03
+vendor/lib64/libsdm-colormgr-algo.so|15f696a4575868e528360896f1e0098d531899c0
+vendor/lib64/libsdm-diag.so|8c038fda1addb5c9cb075d6ae1000698782ddd8b
+vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
+vendor/lib64/libsdmcore.so|c603b3762d5f81fb0667e2e9968761d045ca8790
+vendor/lib64/libsdmextension.so|e10d29f29b7a53b75369e58e8a165b2b86609f26
+vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Graphics (vulkan) - from LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/lib/hw/vulkan.adreno.so|eb44067de1b12fb5ecd4f99eb810e7a3395979f0
