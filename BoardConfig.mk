@@ -20,6 +20,8 @@ DEVICE_PATH := device/xiaomi/sweet
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+ALLOW_MISSING_DEPENDENCIES=true
 
 # Inherit from proprietary files for miuicamera
 -include vendor/xiaomi/sweet-miuicamera/products/board.mk
@@ -79,6 +81,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
+TARGET_KERNEL_CONFIG := sweet_defconfig
 TARGET_KERNEL_CLANG_VERSION := neutron
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
 
