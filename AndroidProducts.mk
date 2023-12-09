@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_sweet.mk
+    $(LOCAL_DIR)/statix_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_sweet-user \
-    aosp_sweet-userdebug \
-    aosp_sweet-eng
+    statix_sweet-user \
+    statix_sweet-userdebug \
+    statix_sweet-eng
