@@ -348,6 +348,7 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client
 
 # Platform
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 

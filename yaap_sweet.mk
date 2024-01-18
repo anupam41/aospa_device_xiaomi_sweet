@@ -13,7 +13,8 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common Pixel Experience stuff.
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
-
+TARGET_BUILD_GAPPS := true
+TARGET_PROVIDES_POWERHAL := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := yaap_sweet
